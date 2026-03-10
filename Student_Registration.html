@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+</head>
+<center>
+<body style="background-image: url('about-us-img.png');background-size: cover;"> 
+    <!--backgroundsize cover means image will be aligned for full page-->
+    <table style="background-color:lightpink;width:600px;height:600px; border: 2px solid black; width: 600px; align-content: center;">
+        <caption style="font-size: xx-large;"><b>Student registration</b></caption>
+        <tr>
+        <td>Roll No.:</td>
+        <td><input type="text" placeholder="924xxxxxxxx" size="42" name="rollno">
+        </tr>
+
+        <tr>
+        <td>Student name:</td>
+        <td>
+        <input type="text" placeholder="First Name" size="17 px" name="fname"> -
+        <input type="text" placeholder="Last Name" size="17 px" name="lname">
+        </td>
+        </tr>
+
+        <tr>
+        <td>Father's Name/Middle Name:</td>
+        <td>
+        <input type="text" size="42" name="Fathername">
+        </td>
+        </tr>
+
+        <tr>
+        <td>Date of Birth:</td>
+        <td>
+        <input type="date" size="17" name="Date"> 
+        (DD-MM-YYYY)
+        </td>
+        </tr>
+
+        <tr>
+        <td>Mobile number:</td>
+        <td>
+        <select id="id_name" name="server_name" >
+        <option value="1">+91</option>
+        <option value="2">+1</option>
+        <option value="3">+44</option>
+        </select>
+        <input type="text" size="35">
+        </td>
+        </tr>
+
+        <tr>
+        <td>Email-id:</td>
+        <td>
+        <input type="email" placeholder="abcd@gmail.com" name="emailid">
+        </td>
+        </tr>
+
+        <tr>
+        <td>Password:</td>
+        <td>
+            <input type="password" name="password">
+        </td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female 
+                <!--if we do not add name attribute, it considers both the radio buttons as independent and not linked, therefore, we can check/select both of them at the same time. To avoid this, give same name to both, so that they are now grouped together and it allows us to only select one at a time-->
+            </td>
+        </tr>
+
+        <tr>
+            <td>Department:</td>
+            <td>
+                <input type="checkbox" size="10">ICT
+                <input type="checkbox" size="10">IT
+                <input type="checkbox" size="10">ECE
+                <input type="checkbox" size="10">Civil
+                <input type="checkbox" size="10">Mech
+            </td>
+        </tr>
+
+        <tr>
+            <td>Course:</td>
+            <td>
+                <select id="id_name" name="server_name">
+                    <option value="1">IWT</option>
+                    <option value="2">DVD</option>
+                    <option value="3">OS</option>
+                    <option value="4">MCI</option>
+                    <option value="5">PS</option>
+                    <option value="6">ADC</option>
+                    <option value="7">DBMS</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Student photo:</td>
+            <td>
+                <input type="file" name="choosefile">
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input type="text" name="cityname" size="42">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Address:</td>
+            <td>
+                <textarea id="Address" name="Address" rows="4" cols="40" ></textarea>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Register" name="register">
+            </td>
+        </tr>
+    </table>
+</body>
+</center>
+</html>
